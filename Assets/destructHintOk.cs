@@ -19,9 +19,9 @@ public class destructHintOk : MonoBehaviour
         if (Input.GetMouseButtonUp(0))
         {
             showHintBall.isHintCreated = false;
-            positionHandler positionHandlerObj = GameObject.Find("SpawnPoint").GetComponent("positionHandler") as positionHandler;
+            //positionHandler positionHandlerObj = GameObject.Find("SpawnPoint").GetComponent("positionHandler") as positionHandler;
             Vector3 newPos = positionHandler.getBestHint(new Vector3(clickPos.x, clickPos.y, clickPos.z));
-            positionHandlerObj.createNewBall(newPos);
+            positionHandler.createNewBall(newPos);
             Destroy(this.gameObject);
         }
 

@@ -24,7 +24,7 @@ public class showHintBall : MonoBehaviour
         {
             ctrlPressed = false;
         }
-        if (Input.GetMouseButtonDown(0) && !ctrlPressed)
+        if (Input.GetMouseButtonDown(0) && !ctrlPressed && GameLogic.isPlayersTurn())
         {
             if (isHintCreated == false)
             {
