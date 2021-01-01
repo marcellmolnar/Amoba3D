@@ -23,6 +23,11 @@ public class botLogic : MonoBehaviour
 
     }
 
+    public static void setDifficulty(int diff)
+    {
+        Debug.Log("Difficulty is now: " + diff);
+    }
+
     private IEnumerator MyWait()
     {
         float waitSec = Random.Range(1.0f, 3.0f);
